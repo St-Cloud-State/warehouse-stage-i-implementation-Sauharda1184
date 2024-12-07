@@ -1,4 +1,5 @@
-package WarehouseSystem;
+package WareHouse;
+
 public class Warehouse {
     // Private fields
     Integer nextClientID;

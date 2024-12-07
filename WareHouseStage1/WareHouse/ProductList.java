@@ -1,3 +1,5 @@
+package WareHouse;
+
 import java.util.*;
 
 public class ProductList {
@@ -25,9 +27,16 @@ public class ProductList {
 
     public Product getProduct(String productID) {
         Iterator<Product> it = products.iterator();
-        while( it.hasNext()) {
+        while( it.hasNext() ) {
+            System.out.println("list has next");
             Product i = it.next();
+            System.out.print("comparing " );
+            System.out.println(i.getID());
+            System.out.print("with ");
+            System.out.println(productID);
+            System.out.println(i.getID() == productID);
             if( i.getID() == productID) {
+                System.out.println("found it");
                 return i;
             }
         }

@@ -1,3 +1,5 @@
+package WareHouse;
+
 import java.util.*;
 
 public class Client {
